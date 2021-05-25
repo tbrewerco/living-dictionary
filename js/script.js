@@ -6,7 +6,7 @@ let wordData;
 $main = $("main")
 $word = $("<h2>"); // sets variable to h2 element
 $pronunciation = $("<h3>") // sets variable to h3 element
-$partOfSpeech = $("<h4>") // sets variable to h4 element
+$partOfSpeech = $("<span>") // sets variable to span element
 $defsList = $("<ul>") // sets variable to ul element
 $definition = $("<div>") // sets variable to div element
 
@@ -20,16 +20,16 @@ function render() {
     $main.append($definition); // appends definition div to main
 
     $word.addClass("word"); // adds class to word h2
-    $word.text(wordData[0].hwi.hw); // set text of $word h2 to object item
+    $word.text(`${wordData[0].hwi.hw}  `); // set text of $word h2 to object item
     $definition.append($word); // append word to $definition div
 
     $pronunciation.addClass("pronunciation"); // adds class to pronunciation h3
     $pronunciation.text(wordData[0].hwi.prs[0].mw); // set text of pronunciation to object item
     $definition.append($pronunciation) // append to $definition div
 
-    $partOfSpeech.addClass("partOfSpeech"); // adds class to partOfSpeech h4
+    $partOfSpeech.addClass("partOfSpeech"); // adds class to partOfSpeech span
     $partOfSpeech.text(wordData[0].fl); // set text to object item
-    $definition.append($partOfSpeech); // append to definition div
+    $word.append($partOfSpeech); // append to word h2
 
     $definition.append($defsList) // appends defsList (unordered list) to definition div
 

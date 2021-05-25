@@ -2,3 +2,11 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+body {
+    display: grid;
+    height: 100vh;
+    margin: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}

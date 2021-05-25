@@ -1,6 +1,6 @@
 # Living Dictionary
 
-A simple dictionary web app that allows users to search by keyword
+A simple dictionary web application that allows users to search for teh definition of a word of their choice.
 
 ## Technologies
 - HTML5
