@@ -17,7 +17,7 @@ function render() {
     $defsList.empty(); // clears list content
 
     $definition.addClass('definition'); // adds class to definition div
-    $mainContent.append($definition); // appends definition div to main
+    $main.append($definition); // appends definition div to main
 
     $word.addClass("word"); // adds class to word h2
     $word.text(wordData[0].hwi.hw); // set text of $word h2 to object item
