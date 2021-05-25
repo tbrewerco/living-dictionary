@@ -19,5 +19,6 @@ A simple dictionary web app that allows users to search by keyword
 [Click here](#) to see working app
 
 ## Future Enhancements
-
-- 
+- Add error message in event of word not found
+- display word variations with differing function labels/parts of speech.
+  
