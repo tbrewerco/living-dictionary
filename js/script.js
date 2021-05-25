@@ -12,7 +12,8 @@ $definition = $("<div>") // sets variable to div element
 
 // functions________
 function render() {
-
+    
+    $('#search').val('').blur(); // clears user text from input field
     $main.empty(); // clears main content
     $defsList.empty(); // clears list content
 
