@@ -1,12 +1,52 @@
 * { /* CSS Reset*/
     box-sizing: border-box;
-    margin: 0;
+    margin: 0px;
 }
 
 body {
-    display: grid;
+    display: flex;
     height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
     margin: auto;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+
+}
+
+nav {
+    display: flex;
+    justify-content:space-around;
+    height: 70px;
+    align-items: flex-end;
+    background-color: #dfeff1;
+    border: 20px;
+    font-size: 30px;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 2px #d1e1e4;
+    padding: 5px;
+}
+
+nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+nav a:link {
+    color: white;
+    text-decoration: none;
+  }
+
+footer {
+    display: flex;
+    justify-content:right;
+    height: 70px;
+    align-items: flex-end;
+    background-color: #dfeff1;
+    border: 20px;
+    font-size: 30px;
+    color: white;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 2px #d1e1e4;
+    padding: 5px;
 }
