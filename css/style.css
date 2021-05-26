@@ -15,26 +15,31 @@ body {
 
 nav {
     display: flex;
-    justify-content:space-between;
+    justify-content:flex-start;
     height: 50px;
     align-items: flex-end;
-    background-color: #dfeff1;
+    /* background-color: #dfeff1; */
     border: 20px;
-    font-size: 30px;
+    font-size: 20px;
     font-style: normal;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-shadow: 2px 2px #d1e1e4;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 10px hsl(180, 14%, 69%);
     padding: 5px;
     box-shadow: 0px 0px 5px 0px #b4c3c5 inset;
+    background-image: linear-gradient(to bottom left, #f7f7f7, hsl(180, 14%, 69%, 0.5) );
 }
 
 nav a:visited {
-    color: white;
+    color: black;
     text-decoration: none;
+    /* padding: 1px; */
+    font-weight: lighter;
 }
 nav a:link {
-    color: white;
+    color: black;
     text-decoration: none;
+    /* padding: 1px; */
+    font-weight: bold;
   }
 
 header {
@@ -56,24 +61,30 @@ form {
 
 #search {
     width: 400px;
-    height: 30px
+    height: 30px;
+    border-color: black;
+
 }
 
 input {
     display: flex;
     align-items: baseline;
     text-align: center;
+    border-color: black;
 }
 
 input::placeholder {
     display: flex;
     justify-content: center;
+    color: black;
+    font-weight:400;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 footer {
     display: flex;
     /* flex-direction: row-reverse; */
     justify-content:start;
-    
+    background-image: linear-gradient(to bottom left, #f7f7f7, hsl(180, 14%, 69%, 0.5) );
     height: 50px;
     align-items: flex-end;
     background-color: #dfeff1;
@@ -82,7 +93,7 @@ footer {
     color: white;
     font-style: normal;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-shadow: 1px 1px #d1e1e4;
+    /* text-shadow: 1px 1px #d1e1e4; */
     padding: 5px;
     box-shadow: 0px 0px 5px 0px #b4c3c5 inset;
 }
