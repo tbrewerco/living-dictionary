@@ -1,25 +1,27 @@
 # Living Dictionary
 
-A simple dictionary web application that allows users to search for teh definition of a word of their choice.
+A simple dictionary web application that allows users to search for the definition of a word of their choice.
 
 ## Technologies
 - HTML5
 - CSS3
 - JavaScript/jQuery
-- [Mirriam Webster API](https://www.dictionaryapi.com/api/v3/references/collegiate/json/)
+- [Merriam-Webster API](https://www.dictionaryapi.com/products/api-collegiate-dictionary)
 
 ## Screenshots
 
-### Wireframes
-![screenshot](images/wire-frame.png)
+- Landing page: ![screenshot](images/screen-shot-landing-page.png)
 
-## Images of Working App
+  
+- User enters input: ![screenshot](images/screen-shot-user-entry.png)
+
+- App displays definition with part of speech and pronunciation: ![screenshot](images/screen-shot-definition.png)
 
 ## Getting Started
-[Click here](#) to see working app
+[Click Here](#) to see functional app. Type any english word into the input field, and hit 'enter' or click the &#8902; .
 
 ## Future Enhancements
-- Add error message in event of word not found
-- Display word variations with differing function labels/parts of speech.
-- Add "Similar Words" section: displays synonyms of user-defined search word. Listed similar words are hyperlinks targeting the definition page of the listed similar word.
-- Add "Random Word..." section which displays randomly selected word and minimal information about the word.
+- Add error message for "word not found" event.
+- Display all definition word variations, organized by functional labels/parts of speech.
+- Add "Similar Words" section which displays synonyms of user-defined search word. Listed similar words are hyperlinks targeting the definition page of the selected similar word.
+- Add "Random Word" section which displays randomly selected word and minimal information about the word. 
