@@ -18,7 +18,7 @@ A simple dictionary web application that allows users to search for the definiti
 - App displays definition with part of speech and pronunciation: ![screenshot](images/screen-shot-definition.png)
 
 ## Getting Started
-[Click Here](#) to see functional app. Type any english word into the input field, and hit 'enter' or click the &#8902; .
+[Click Here](https://tbrewerco.github.io/living-dictionary/) to see functional app. Type any english word into the input field, and hit 'enter' or click the &#8902; .
 
 ## Future Enhancements
 - Add error message for "word not found" event.
