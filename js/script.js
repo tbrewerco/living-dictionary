@@ -2,12 +2,12 @@
 let wordData;
 
 // variables________
-$main = $("main")
+$main = $("main");
 $word = $("<h2>"); // sets variable to h2 element
-$pronunciation = $("<h3>") // sets variable to h3 element
-$partOfSpeech = $("<span>") // sets variable to span element
-$defsList = $("<ul>") // sets variable to ul element
-$definition = $("<div>") // sets variable to div element
+$pronunciation = $("<h3>"); // sets variable to h3 element
+$partOfSpeech = $("<span>"); // sets variable to span element
+$defsList = $("<ul>"); // sets variable to ul element
+$definition = $("<div>"); // sets variable to div element
 
 // functions________
 function render() {
@@ -25,17 +25,17 @@ function render() {
 
     $pronunciation.addClass("pronunciation"); // adds class to pronunciation h3
     $pronunciation.text(wordData[0].hwi.prs[0].mw); // set text of pronunciation to object item
-    $definition.append($pronunciation) // append to $definition div
+    $definition.append($pronunciation); // append to $definition div
 
     $partOfSpeech.addClass("partOfSpeech"); // adds class to partOfSpeech span
     $partOfSpeech.text(wordData[0].fl); // set text to object item
     $word.append($partOfSpeech); // append to word h2
 
-    $definition.append($defsList) // appends defsList (unordered list) to definition div
+    $definition.append($defsList); // appends defsList (unordered list) to definition div
 
     wordData[0].shortdef.forEach((definition) => { // arrow function that, for each definition in the object, creates a list item element and displays the definition text in the list item
-        $li = $("<li>")
-        $li.text(definition)
+        $li = $("<li>");
+        $li.text(definition);
         $defsList.append($li);
     })
 
@@ -43,7 +43,7 @@ function render() {
 
 function handleGetData(event) { // declare handleGetData function, to be called on form submit
     event.preventDefault(); // prevents page refresh on form submit
-    let searchText = $("input").val() // store user input in variable searchText
+    let searchText = $("input").val(); // store user input in variable searchText
     $.ajax( // gets data from dictonaryapi.com using user input (searchText) as keyword
             `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${searchText}?key=ae49d360-70d0-4fb5-9a08-fa08c61a5b33`
         )
