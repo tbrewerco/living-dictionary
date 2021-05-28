@@ -1,7 +1,7 @@
 // state variables________
 let wordData;
 
-// variables________
+// variables and cached element references________
 $main = $("main");
 $word = $("<h2>"); // sets variable to h2 element
 $pronunciation = $("<h3>"); // sets variable to h3 element
